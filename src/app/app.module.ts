@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
