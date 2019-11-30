@@ -1,0 +1,16 @@
+.bio {
+  span + span {
+    &::before {
+      content: " | ";
+      color: #a0aec0;
+    }
+  }
+}
+
+
+.contact {
+  & .mat-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
