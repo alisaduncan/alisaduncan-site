@@ -1,7 +1,16 @@
-section + section {
-  @apply p-6;
+.bio {
+  span + span {
+    &::before {
+      content: " | ";
+      color: #a0aec0;
+    }
+  }
 }
 
-h1,h2 {
-  @apply font-display;
+
+.contact {
+  & .mat-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
 }
