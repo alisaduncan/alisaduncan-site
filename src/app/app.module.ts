@@ -5,16 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
+import { PostsComponent } from './posts/posts.component';
+import { PostCardComponent } from './posts/post-card/post-card.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactComponent
+    ContactComponent,
+    PostsComponent,
+    PostCardComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +28,8 @@ import { ContactComponent } from './contact/contact.component';
     BrowserAnimationsModule,
     HttpClientModule,
     MatIconModule,
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
