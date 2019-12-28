@@ -1,0 +1,29 @@
+.highlights {
+  section + section {
+    margin-top: 1rem;
+  }
+
+  .contact {
+    .mat-icon.email {
+      height: 0.75rem;
+      width: 0.75rem;
+    }
+  }
+}
+
+.experience {
+  section + section {
+    margin-top: 1rem;
+  }
+
+  ul.titles > li+li {
+    margin-top: 0.25rem;
+  }
+
+  ul.achievements {
+    list-style-type: disc;
+    list-style-position: inside;
+    list-style-image: url('/assets/svg-icons/li-square.svg');
+  }
+}
+

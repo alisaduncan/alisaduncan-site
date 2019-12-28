@@ -7,11 +7,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
 
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { PostsComponent } from './posts/posts.component';
 import { PostCardComponent } from './posts/post-card/post-card.component';
+import { ResumeComponent } from './resume/resume.component';
+import { HomeComponent } from './home/home.component';
+import { ResumeContributionsComponent } from './resume/contributions/contributions.component';
+import { EducationComponent } from './resume/education/education.component';
 
 
 
@@ -20,7 +25,11 @@ import { PostCardComponent } from './posts/post-card/post-card.component';
     AppComponent,
     ContactComponent,
     PostsComponent,
-    PostCardComponent
+    PostCardComponent,
+    ResumeComponent,
+    HomeComponent,
+    ResumeContributionsComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +38,8 @@ import { PostCardComponent } from './posts/post-card/post-card.component';
     HttpClientModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

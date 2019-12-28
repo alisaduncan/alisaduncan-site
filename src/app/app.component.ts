@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor() {}
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+    iconRegistry.addSvgIconSetInNamespace('social', sanitizer.bypassSecurityTrustResourceUrl('./assets/svg-icons/social.svg'));
+    iconRegistry.addSvgIconSetInNamespace('feather', sanitizer.bypassSecurityTrustResourceUrl('./assets/svg-icons/feather-icons.svg'));
+  }
 }
