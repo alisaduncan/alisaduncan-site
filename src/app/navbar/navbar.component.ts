@@ -1,0 +1,24 @@
+import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { Observable } from 'rxjs';
+import { filter, map } from 'rxjs/operators';
+
+@Component({
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.scss']
+})
+export class NavbarComponent implements OnInit {
+  public isSubRoute$: Observable<boolean>;
+
+  constructor(router: Router) {
+    this.isSubRoute$ = router.events.pipe(
+      filter(event => event instanceof NavigationEnd),
+      map((event: NavigationEnd) => event.url !== '/' && !event.url.includes('home'))
+    );
+  }
+
+  ngOnInit() {
+  }
+
+}
