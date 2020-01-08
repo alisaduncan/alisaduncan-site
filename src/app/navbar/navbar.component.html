@@ -1,0 +1,16 @@
+<mat-toolbar class="bg-gray-200 text-adCharcoal font-display">
+  <div class="w-full flex flex-row justify-between">
+    <span class="w-1/4"></span>
+    <span *ngIf="isSubRoute$ | async" class="text-4xl w-1/2 text-center">
+      <a routerLink="/">Alisa Duncan</a>
+    </span>
+    <div class="w-1/4">
+      <ul class="w-full flex flex-row justify-end">
+<!--        <li class="mr-8">Posts</li>-->
+<!--        <li class="mr-8">Contact</li>-->
+<!--        <li class=""><a routerLink="/resume">Resume</a></li>-->
+      </ul>
+    </div>
+
+  </div>
+</mat-toolbar>
