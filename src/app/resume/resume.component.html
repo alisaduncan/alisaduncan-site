@@ -3,11 +3,21 @@
     <img
       class="rounded-full w-32 h-32 lg:w-48 lg:h-48 mr-8 sm:mr-3 border-2 border-adGray"
       src="assets/img/alisa.jpg" alt="Alisa Duncan headshot"/>
-    <section class="about mx-3 sm:w-2/3 lg:w-1/2 xl:w-1/3 text-lg lg:text-xl xl:text-xl text-medium font-display">
-      <p class="text-center sm:text-left lg:text-left xl:text-left">
-        Software Engineer with 10+ years in enterprise software development. Full-stack development and enterprise architecture experience with increasing expertise in web development using Angular.<br/>
-        Community builder, organizer, and volunteer.
-      </p>
+    <section class="about mx-3 sm:w-2/3 lg:w-1/2 xl:w-1/3 lg:text-lg xl:text-lg text-medium font-display">
+      <div class="text-center sm:text-left lg:text-left xl:text-left">
+        <p>
+          Software Engineer with 10+ years in enterprise software development.
+        </p>
+        <p class="pt-2">
+          Continuous learner, software quality advocate, and a pragmatic champion of best practices for software engineering.
+        </p>
+        <p class="pt-2">
+          Full-stack development and enterprise architecture experience with increasing expertise in web development using Angular.
+        </p>
+        <p class="pt-2">
+          Community builder, organizer, and volunteer.
+        </p>
+      </div>
     </section>
   </div>
   <div class="lg:flex lg:flex-row xl:flex-row lg:justify-start xl:justify-start">
@@ -16,13 +26,14 @@
         <h2 class="text-3xl my-3 font-display text-adGunmetal">Contact</h2>
         <ul class="sm:w-5/12 md:w-1/3 lg:w-4/5 mx-auto">
           <li class="mb-2 flex flex-column items-center justify-center sm:justify-start md:justify-start lg:justify-start xl:justify-center"><mat-icon svgIcon="feather:mail" class="text-adBlueGray"></mat-icon><span class="pl-3 leading-tight">alisa<span><mat-icon class="email mx-1" svgIcon="feather:at-sign" aria-label="@"></mat-icon></span>alisaduncan.dev</span></li>
+          <li class="mb-2 flex flex-column items-center justify-center sm:justify-start md:justify-start lg:justify-start xl:justify-center"><mat-icon svgIcon="feather:link" class="text-adBlueGray"></mat-icon><span class="pl-3 leading-tight"><a class="underline" href="https://alisaduncan.dev" target="_blank">alisaduncan.dev</a></span></li>
           <li class="mb-2 flex flex-column items-center justify-center sm:justify-start md:justify-start lg:justify-start xl:justify-center"><mat-icon svgIcon="feather:linkedin" class="text-adBlueGray"></mat-icon><span class="pl-3 leading-tight"><a class="underline" href="https://linkedin.com/in/jalisaduncan" target="_blank">linkedin/in/jalisaduncan</a></span></li>
           <li class="mb-2 flex flex-column items-center justify-center sm:justify-start md:justify-start lg:justify-start xl:justify-center"><mat-icon svgIcon="feather:github" class="text-adBlueGray"></mat-icon><span class="pl-3 leading-tight"><a class="underline" href="https://github.com/alisaduncan" target="_blank">github.com/alisaduncan</a></span></li>
           <li class="flex flex-column items-center justify-center sm:justify-start md:justify-start lg:justify-start xl:justify-center"><mat-icon svgIcon="feather:map-pin" class="text-adBlueGray"></mat-icon><span class="pl-3 leading-tight">Kansas City, MO</span></li>
         </ul>
       </section>
       <section class="skills w-11/12 mx-auto mb-6">
-        <h2 class="text-3xl text-center my-3 font-display text-adGunmetal">Skills</h2>
+        <h2 class="text-3xl text-center my-3 font-display text-adGunmetal">Notable Skills</h2>
         <ul class="w-11/12 mx-auto flex justify-start flex-wrap">
           <li class="rounded py-1 px-2 bg-adLightBlue border border-adGray font-medium m-1">Angular</li>
           <li class="rounded py-1 px-2 bg-adLightBlue border border-adGray font-medium m-1">Material</li>
@@ -38,17 +49,19 @@
           <li class="rounded py-1 px-2 bg-adLightBlue border border-adGray font-medium m-1">C++</li>
           <li class="rounded py-1 px-2 bg-adLightBlue border border-adGray font-medium m-1">.NET Core</li>
           <li class="rounded py-1 px-2 bg-adLightBlue border border-adGray font-medium m-1">Git</li>
+          <li class="rounded py-1 px-2 bg-adLightBlue border border-adGray font-medium m-1">CSS</li>
           <li class="rounded py-1 px-2 bg-adLightBlue border border-adGray font-medium m-1">Sass</li>
           <li class="rounded py-1 px-2 bg-adLightBlue border border-adGray font-medium m-1">Jasmine</li>
           <li class="rounded py-1 px-2 bg-adLightBlue border border-adGray font-medium m-1">XUnit</li>
+          <li class="rounded py-1 px-2 bg-adLightBlue border border-adGray font-medium m-1">Automated Tests</li>
           <li class="rounded py-1 px-2 bg-adLightBlue border border-adGray font-medium m-1">SQL</li>
           <li class="rounded py-1 px-2 bg-adLightBlue border border-adGray font-medium m-1">Azure</li>
           <li class="rounded py-1 px-2 bg-adLightBlue border border-adGray font-medium m-1">CI/CD</li>
         </ul>
       </section>
 
-      <app-education class="hidden lg:block xl:block "></app-education>
       <app-resume-contributions class="hidden lg:block xl:block"></app-resume-contributions>
+      <app-education class="hidden lg:block xl:block "></app-education>
 
     </div>
     <div class="experience mx-3 mb-3">
@@ -56,41 +69,37 @@
         <h2 class="text-center text-3xl my-3 font-display text-adGunmetal">Work Experience</h2>
         <div class="company m-6 md:flex lg:flex xl:flex md:flex-row lg:flex-row xl:flex-row">
           <div class="background md:w-1/3 lg:w-1/5 xl:w-1/5">
-            <h4 class="text-lg font-medium">Engaged Technologies</h4>
-            <p class="text-sm italic">
-              Parkville, MO <br/>
-              (March 2015 - Present)
+            <h4 class="text-xl font-medium font-display">Engaged Technologies</h4>
+            <p class="text-sm">
+              Parkville, MO
             </p>
-            <ul class="titles my-3">
+            <ul class="titles my-3 text-sm">
               <li>
                 <h5 class="font-semibold">Senior Software Architect and <br/> Development Manager</h5>
-                <p class="text-sm italic">(September 2019 - Present)</p>
+                <p class="italic">(September 2019 - Present)</p>
               </li>
               <li>
                 <h5 class="font-semibold">Lead Software Architect</h5>
-                <p class="text-sm italic">(August 2017 - September 2019)</p>
+                <p class="italic">(August 2017 - September 2019)</p>
               </li>
               <li>
                 <h5 class="font-semibold">Software Architect</h5>
-                <p class="text-sm italic">(May 2016 - August 2017)</p>
+                <p class="italic">(May 2016 - August 2017)</p>
               </li>
               <li>
                 <h5 class="font-semibold">Senior Software Engineer</h5>
-                <p class="text-sm italic">(March 2015 - May 2016)</p>
+                <p class="italic">(March 2015 - May 2016)</p>
               </li>
             </ul>
           </div>
           <ul class="achievements md:w-2/3 lg:w-4/5 xl:w-4/5">
             <li>Recognized for performance, leadership, technical contributions, and architectural vision through fast-track promotions</li>
-            <li>Designed and developed an enterprise multi-tenant, white-labeled, SaS, Transportation Management System (TMS) platform</li>
-            <li>Created a system supporting two live tenants and processing thousands of shipments each day</li>
+            <li>Designed and developed an enterprise multi-tenant, white-labeled, SaaS, Transportation Management System (TMS) platform supporting two live tenants and processing thousands of shipments a day</li>
             <li>Architected a TMS platform supporting scalability using microservices, decentralized data stores, and event orchestration</li>
-            <li>Led system architecture in a directional perspective while balancing team autonomy and collaboration</li>
-            <li>Identified and implemented authentication using JWT and OpenId Connect using OSS Federation Gateway</li>
             <li>Initiated technology stack changes by implementing REST microservices in .NET Core and NestJS</li>
             <li>Prototyped and led creation of responsive, i18n friendly Angular application utilizing Material Design, Sass, and Flex Layout</li>
+            <li>Led system architecture in a directional perspective while balancing team autonomy and collaboration</li>
             <li>Organized and led training by identifying knowledge gaps within the team and providing a safe mechanism to learn</li>
-            <li>Championed acceptance of best practices for software development</li>
           </ul>
         </div>
         <div class="mx-6">
@@ -99,41 +108,39 @@
         <div class="company m-6">
           <div class="md:flex lg:flex xl:flex md:flex-row lg:flex-row xl:flex-row">
             <div class="background md:w-1/3 lg:w-1/5 xl:w-1/5">
-              <h4 class="text-lg font-medium">Lexmark International, Inc. </h4>
+              <h4 class="text-xl font-medium font-display">Lexmark International</h4>
               <p class="text-sm font-medium">
                 (formerly Perceptive Software)
               </p>
-              <p class="text-sm italic">
-                Lenexa, KS <br/>
-                (January 2008 - March 2015)
+              <p class="text-sm">
+                Lenexa, KS
               </p>
-              <ul class="titles my-3">
+              <ul class="titles my-3 text-sm">
                 <li>
                   <h5 class="font-semibold">Software Architect and Team Lead</h5>
-                  <p class="text-sm italic">(November 2012 - March 2015)</p>
+                  <p class="italic">(November 2012 - March 2015)</p>
                 </li>
                 <li>
                   <h5 class="font-semibold">Software Engineer</h5>
-                  <p class="text-sm italic">(January 2008 - November 2012)</p>
+                  <p class="italic">(January 2008 - November 2012)</p>
                 </li>
               </ul>
             </div>
             <ul class="achievements md:w-2/3 lg:w-4/5 xl:w-4/5">
               <li>Recognized for performance, technical contributions, communication, and leadership through promotion and awards</li>
-              <li>Contributed to features for an enterprise on-premise Enterprise Content Management (ECM) application
+              <li>Contributed to features for an enterprise on-premise Enterprise Content Management (ECM) application for Windows and Linux
               </li>
               <li>Provided technical leadership in C++, Java, and JavaScript for client and server-side graphical
                 rendering
               </li>
-              <li>Designed product features in C++, C#, and Java on both Windows and Unix systems</li>
-              <li>Developed UI components with consideration for localization using Windows MFC, Java Swing, WPF, and
+              <li>Developed UI components with consideration for localization using Windows MFC, WPF, Java Swing, and
                 JavaScript
               </li>
               <li>Implemented queries for Oracle and MS SQL Server databases</li>
-              <li>Wrote and maintained automated tests using CPPUnit, NUnit, JUnit, and Jasmine</li>
               <li>Researched and integrated with third-party components for capture devices, OCR ability, and image
                 processing
               </li>
+              <li>Wrote and maintained automated tests using CPPUnit, NUnit, JUnit, and Jasmine</li>
             </ul>
           </div>
           <h5 class="mt-3 font-medium">May 2010</h5>
@@ -146,12 +153,11 @@
         </div>
         <div class="company m-6 md:flex lg:flex xl:flex md:flex-row lg:flex-row xl:flex-row">
           <div class="background md:w-1/3 lg:w-1/5 xl:w-1/5">
-            <h4 class="text-lg font-medium">Tnemec Company</h4>
-            <p class="text-sm italic">
-              North Kansas City, MO <br/>
-              (March 2001 - January 2008)
+            <h4 class="text-xl font-medium font-display">Tnemec Company</h4>
+            <p class="text-sm">
+              North Kansas City, MO
             </p>
-            <ul class="titles my-3">
+            <ul class="titles my-3 text-sm">
               <li>
                 <h5 class="font-semibold">Chemist</h5>
                 <p class="text-sm italic">(March 2001 - January 2008)</p>
@@ -159,59 +165,57 @@
             </ul>
           </div>
           <ul class="achievements md:w-2/3 lg:w-4/5 xl:w-4/5">
-            <li>Developed coatings to specifications determined by interaction with Sales and Marketing</li>
+            <li>Formulated high-performance industrial coatings</li>
             <li>Contributing inventor to patented work— Patent Number 20060135656</li>
           </ul>
         </div>
       </section>
 
       <section class="community border rounded bg-gray-100 border-adGray">
-        <h2 class="text-center text-3xl my-3 font-display text-adGunmetal">Community Experience</h2>
+        <h2 class="text-center text-3xl my-3 font-display text-adGunmetal">Community Engagement</h2>
         <div class="position m-6">
-          <h4 class="text-lg font-medium">Co-Organizer, AngularKC</h4>
+          <h4 class="text-xl font-medium font-display">Co-Organizer, AngularKC</h4>
           <p class="text-sm italic">(September 2017 - Present)</p>
-          <p class="italic">Build an Angular community in Kansas City by organizing a monthly meeting covering current topics in Angular</p>
+          <p class="italic text-sm">A collaborative and engaged community in Kansas City that meets monthly to cover current topics in Angular to create dynamic web apps</p>
           <ul class="achievements mt-2 xl:ml-5">
-            <li>Secured venue and sponsorship</li>
-            <li>Solicited for and found speakers</li>
-            <li>Presented technical topics in Angular regularly</li>
-            <li>Built enthusiasm and member base via social media</li>
+            <li>Secured venues and sponsorship</li>
+            <li>Vetted, recruited, and provided direction for speakers</li>
+            <li>Presented technical topics in Angular</li>
+            <li>Built enthusiasm and member base of 600+ developers via social media, word-of-mouth, and by presenting at other technical meetups</li>
             <li>Coordinated with members of other technical communities</li>
           </ul>
         </div>
         <div class="position m-6">
-          <h4 class="text-lg font-medium">Program Director, ngGirls Kansas City <span class="italic">by</span> Kansas City Women in Technology</h4>
+          <h4 class="text-xl font-medium font-display">Program Director, ngGirls Kansas City <span class="text-base">by Kansas City Women in Technology</span></h4>
           <p class="text-sm italic">(December 2018 - Present)</p>
-          <p class="italic">Organize a free introductory workshop for women to learn web development using Angular with support from mentors</p>
+          <p class="italic text-sm">A free introductory, full day workshop for women to learn Angular web development, placing emphasis on mentorship and removing barriers to success (i.e. tuition and transportation challenges)</p>
           <ul class="achievements mt-2 xl:ml-5">
-            <li>Recruited, interviewed, and hired a team 7 volunteer leadership staff</li>
-            <li>Led the leadership team to organize a free all-day Angular workshop for >100 participants</li>
-            <li>Managed budget of $6000 by balancing spend and sponsorship income</li>
-            <li>Directed leadership team to achieve goals by identifying and communicating program vision, timelines, and milestones</li>
-            <li>Contributed technically to ngGirls Tutorial that creates a To Do App in Angular</li>
-            <li>Created tool installation worksheet</li>
-            <li>Reported on progress and communicated program updates to Kansas City Women in Technology program leadership team</li>
+            <li>Recruited, interviewed, and hired the 7 volunteers who comprise the leadership staff</li>
+            <li>Led efforts to identify and communicate program vision, timelines, and milestones</li>
+            <li>Managed a budget to cover >100 participants that was acquired through sponsors and strategically spent for impact</li>
+            <li>Created tool installation guide using GitBook and contributed technically to ngGirls Angular tutorial</li>
+            <li>Reported progress and program updates to Kansas City Women in Technology leadership team</li>
           </ul>
         </div>
         <div class="position m-6">
-          <h4 class="text-lg font-medium">Technical Materials Director, Coding & Cocktails <span class="italic">by</span> Kansas City Women in Technology </h4>
+          <h4 class="text-xl font-medium font-display">Technical Materials Director, Coding & Cocktails <span class="text-base">by Kansas City Women in Technology</span> </h4>
           <p class="text-sm italic">(December 2017 - Present)</p>
-          <p class="italic">Create and prepare tutorials and learning resources for women to learn web development basics</p>
+          <p class="italic text-sm">Create and prepare tutorials and learning resources for women to learn web development basics</p>
           <ul class="achievements mt-2 xl:ml-5">
             <li>Collaborated with Curriculum Director and Presentation Director to create an unified voice for session topics</li>
-            <li>Conceived of projects demonstrating concepts such as HTML, CSS, JavaScript (ES6), Git, Commandline, Package Managers, REST API (Express, NestJS, Sails), and SPA (Angular)</li>
-            <li>Prepared step by step instructions to build the project while emphasizing concepts using Markdown and GitBook</li>
-            <li>Documented installation instructions for toolsets for Windows OS, macOS, Linux, and Cloud IDE (StackBlitz, CodeSandbox, CodePen, CodeAnywhere)</li>
-            <li>Organized code samples, answerkeys, and worksheets into GitHub repos from disparate non-collaborative sources</li>
-            <li>Maintained and added features to Coding & Cocktails Angular website, such as upgraded to new versions of Angular, refactored code to facilitate easy maintenance of sessions, implemented Google Maps component, and enhanced user experience and testability by refactoring interaction with MailChimp for mentor signup</li>
+            <li>Identified and created projects to teach attendees concepts that include HTML, CSS, JavaScript (ES6), Git, Commandline, Package Managers, REST API (Express, NestJS, Sails), and SPA (Angular)</li>
+            <li>Prepared step-by-step instructions using Markdown and Gitbook for attendees to build projects and reinforce concepts</li>
+            <li>Documented installation instructions for toolsets used during the sessions, including for Windows OS, macOS, Linux, and Cloud IDE (StackBlitz, CodeSandbox, CodePen, CodeAnywhere)</li>
+            <li>Organized, updated, and created code samples, answer keys, and worksheets in GitHub, providing a single and collaborative source for all workshop materials</li>
+            <li>Enhanced experiences for both end users and developers of the Coding & Cocktails Angular website with updates that include updating Angular versions, refactoring code for easier maintenance, writing unit tests, and implementing components for Google Maps and MailChimp email subscriptions</li>
           </ul>
         </div>
       </section>
     </div>
 
     <div class="highlights lg:hidden xl:hidden mx-3 border rounded border-adGray bg-gray-100">
-      <app-education></app-education>
       <app-resume-contributions></app-resume-contributions>
+      <app-education></app-education>
     </div>
 
   </div>
