@@ -1,4 +1,9 @@
 module.exports = {
+  mode: 'jit',
+  purge: {
+    enabled: true,
+    content: ['./src/**/*.{html,ts}']
+  },
   theme: {
     fontFamily: {
       display: ['Poppins', 'sans-serif'],
@@ -22,7 +27,13 @@ module.exports = {
         adLightGray: 'rgb(223,231,233)',
         adButtercup: 'rgb(254,253,187)',
         adTea: 'rgb(204,232,183)',
-        adWhitesmoke: 'whitesmoke'
+        adWhitesmoke: 'whitesmoke',
+        adGray100: '#f7fafc',
+        adGray200: '#edf2f7',
+        adGray500: '#a0aec0',
+        adGray700: '#4a5568',
+        adGray900: '#1a202c',
+        adBlue900: '#2a4365',
       }
     }
   },

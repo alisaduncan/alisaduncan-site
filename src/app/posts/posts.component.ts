@@ -11,7 +11,7 @@ import { Post } from './post';
   styleUrls: ['./posts.component.scss']
 })
 export class PostsComponent implements OnInit {
-  public posts: Observable<Post[]>;
+  public posts!: Observable<Post[]>;
 
   constructor(private postService: DevCommunityService) { }
 
