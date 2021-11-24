@@ -14,7 +14,8 @@ export class NavbarComponent implements OnInit {
   constructor(router: Router) {
     this.isSubRoute$ = router.events.pipe(
       filter(event => event instanceof NavigationEnd),
-      map((event: NavigationEnd) => event.url !== '/' && !event.url.includes('home'))
+      map(event => event as NavigationEnd),
+      map(event => event.url !== '/' && !event.url.includes('home'))
     );
   }
 

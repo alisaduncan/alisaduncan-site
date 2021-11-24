@@ -1,20 +1,23 @@
-<a href="{{post.url}}" target="_blank">
-  <mat-card class="post-card max-w-md text-left">
-    <img mat-card-image class="max-w-lg" src="{{post.imageUrl}}" alt="Cover image for post {{post.title}}"/>
+<ng-container *ngIf="!!post">
+  <a href="{{post.url}}" target="_blank">
+    <mat-card class="post-card max-w-md text-left">
+      <img mat-card-image class="max-w-lg" src="{{post.imageUrl}}" alt="Cover image for post {{post.title}}"/>
 
-    <mat-card-header class="flex justify-center">
-      <mat-card-title class="font-display">{{post.title}}</mat-card-title>
-    </mat-card-header>
+      <mat-card-header class="flex justify-center">
+        <mat-card-title class="font-display">{{post.title}}</mat-card-title>
+      </mat-card-header>
 
-    <mat-card-content class="text-left">
-      <p class="font-body">{{post.description}}</p>
-    </mat-card-content>
-    <mat-card-actions align="end" class="font-display">
-      <!--    <a mat-icon-button href="{{post.url}}" target="_blank" aria-label="Open in external tab">-->
-      <!--      <mat-icon>open_in_new</mat-icon>-->
-      <!--    </a>-->
-      <a mat-button href="{{post.url}}" target="_blank">READ MORE</a>
-    </mat-card-actions>
-  </mat-card>
-</a>
+      <mat-card-content class="text-left">
+        <p class="font-body">{{post.description}}</p>
+      </mat-card-content>
+      <mat-card-actions align="end" class="font-display">
+        <!--    <a mat-icon-button href="{{post.url}}" target="_blank" aria-label="Open in external tab">-->
+        <!--      <mat-icon>open_in_new</mat-icon>-->
+        <!--    </a>-->
+        <a mat-button href="{{post.url}}" target="_blank">READ MORE</a>
+      </mat-card-actions>
+    </mat-card>
+  </a>
+</ng-container>
+
 
