@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { Observable } from 'rxjs';
 
-import { DevCommunityService } from './dev-community.service';
-import { Post } from './post';
+import { DevCommunityService } from '../../dev-community.service';
+import { Post } from '../../types';
 
 @Component({
   selector: 'app-posts',

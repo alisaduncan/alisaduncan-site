@@ -11,28 +11,23 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { AppComponent } from './app.component';
-import { ContactComponent } from './contact/contact.component';
-import { PostsComponent } from './posts/posts.component';
-import { PostCardComponent } from './posts/post-card/post-card.component';
 import { ResumeComponent } from './resume/resume.component';
 import { HomeComponent } from './home/home.component';
 import { ResumeContributionsComponent } from './resume/contributions/contributions.component';
 import { EducationComponent } from './resume/education/education.component';
 import { NavbarComponent } from './navbar/navbar.component';
-
-
+import { SharedModule } from './shared/shared.module';
+import { HighlightsComponent } from './highlights/highlights.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactComponent,
-    PostsComponent,
-    PostCardComponent,
     ResumeComponent,
     HomeComponent,
     ResumeContributionsComponent,
     EducationComponent,
-    NavbarComponent
+    NavbarComponent,
+    HighlightsComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +38,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     MatButtonModule,
     MatCardModule,
     MatDividerModule,
-    MatToolbarModule
+    MatToolbarModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
