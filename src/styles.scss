@@ -16,3 +16,7 @@ $custom-typography: mat.define-typography-config(
 
 @tailwind utilities;
 
+body {
+  height: 100%;
+}
+

@@ -2,9 +2,9 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { PostsComponent } from './posts.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { DevCommunityService } from './dev-community.service';
+import { DevCommunityService } from '../../dev-community.service';
 import { of } from 'rxjs';
-import { Post } from './post';
+import { Post } from '../../types/post';
 
 describe('PostsComponent', () => {
   let component: PostsComponent;
