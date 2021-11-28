@@ -27,7 +27,7 @@ import { HighlightsComponent } from './highlights/highlights.component';
     ResumeContributionsComponent,
     EducationComponent,
     NavbarComponent,
-    HighlightsComponent
+    HighlightsComponent,
   ],
   imports: [
     BrowserModule,

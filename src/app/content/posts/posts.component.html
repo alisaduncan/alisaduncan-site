@@ -1,12 +1,16 @@
 <section class="m-1 pt-6 md:pt-8 lg:pt-8 xl:pt-8">
-  <h3 class="font-display text-3xl text-center">Check out some things I wrote about</h3>
+  <h3 class="font-display text-4xl text-center">Check out some things I wrote</h3>
+  <p class="py-10 text-center text-xl">
+    You can find me on
+    <a href="https://dev.to/alisaduncan" class="text-adBedazzledBlue underline">DEV</a>
+    and the
+    <a href="https://developer.okta.com/blog/authors/alisa-duncan/" class="text-adBedazzledBlue underline">Okta Developer Blog</a>.
+  </p>
 
-<!--  <h4>Find these posts on <a href="https://dev.to/alisaduncan">DEV</a></h4>-->
   <ul class="mx-auto mt-4 flex flex-wrap justify-center">
     <li class="m-4" *ngFor="let post of posts | async">
       <app-post-card [post]="post"></app-post-card>
     </li>
   </ul>
 
-<!--  <h4>Find me on the <a href="https://developer.okta.com/blog/authors/alisa-duncan/">Okta Developer Blog</a></h4>-->
 </section>

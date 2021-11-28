@@ -1,39 +1,89 @@
-<main class="text-center m-0 s:m-1 md:m-2 lg:m-4 xl:m-4 text-adGray700 font-body">
-  <section class="intro">
-    <p class="text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl mb-2">Hi there! I'm</p>
-    <h1 class="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl font-display uppercase text-adBlue900">Alisa
-      Duncan</h1>
-    <img
-      class="rounded-full w-5/12 sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-64 xl:h-64 mx-auto mb-4 border-2 border-solid border-adGray500"
-      src="assets/img/alisa.jpg" alt="Alisa Duncan headshot"/>
+<main class="font-body text-adCharcoal">
+  <section class="intro py-3 sm:py-5 bg-adCharcoal">
+    <div class="bg-adBedazzledBlue max-w-screen-xl w-100 sm:w-100 md:w-100 lg:w-11/12 xl:w-9/12 2xl:w-8/12 mx-auto flex flex-row justify-between">
+      <div class="flex flex-col justify-evenly text-left ml-6 lg:ml-12 xl:ml-12">
+        <div>
+          <p class="text-2xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl mb-0 sm:mb-2 md:mb-4 text-adLightBlue">Hi there! I'm</p>
+          <h1 class="text-3xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl font-display uppercase text-adSalmon">Alisa
+            Duncan</h1>
+        </div>
+        <p class="bio text-xs sm:text-base lg:text-lg text-adTea border-t-2 border-b-2 border-adShadowBlue py-2">
+          <span>developer advocate </span>
+          <span> relentless learner </span>
+          <span> software architect </span>
+          <span> wine drinker </span>
+          <span> volunteer</span>
+        </p>
+      </div>
+      <div>
+        <img class="w-64 sm:w-96 md:w-96 lg:w-96 xl:h-96"
+          src="assets/img/alisa-transparent.png" alt="Alisa Duncan headshot"/>
+      </div>
+    </div>
   </section>
-  <section class="bio m-1 pt-6 md:pt-8 lg:pt-8 xl:pt-8">
-    <h2 class="font-display text-3xl">I'm a </h2>
-    <p class="mt-4 text-lg text-adGray900">
-      <span>software architect </span>
-      <span> wine drinker </span>
-      <span> relentless learner </span>
-      <span> voracious reader </span>
-      <span> software quality advocate </span>
-      <span> volunteer</span>
-    </p>
+  <section class="about bg-adLightBlue py-10 text-center">
+    <h2 class="font-display text-4xl py-10">Where you'll find me</h2>
+    <div class="container mx-auto">
+      <div class="mt-6 grid grid-col-1 lg:grid-cols-2 gap-12 lg:gap-x-16 lg:gap-y-20 xl:gap-20 justify-start items-stretch">
+        <div class="flex flex-col">
+          <img src="assets/img/coding.jpg" alt="HTML" class="w-96 border border-2 border-adShadowBlue rounded-md mx-auto" />
+          <h3 class="text-adIndigoDye text-2xl font-display mt-6 mb-2">Writing code</h3>
+          <p class="mx-auto w-11/12 sm:w-10/12 md:w-9/12 lg:w-11/12 xl:w-9/12 text-justify">As a Google Developer Expert in Angular, I love creating sites using tools from the Angular ecosystem. My current tech stack is mainly TypeScript based JavaScript frameworks such as Angular & NestJS, but I have professional experience with C#, Java, and C++ as well.</p>
+          <p class="mx-auto w-11/12 sm:w-10/12 md:w-9/12 lg:w-11/12 xl:w-9/12 pt-2 text-justify">I'm excited to learn more about Vue, Svelte, React, Fastify, and Express.</p>
+        </div>
+        <div class="flex flex-col">
+          <img src="assets/img/workshop-victory.jpg" alt="victorious workshop participant" class="w-96 border border-2 border-adShadowBlue rounded-md mx-auto" />
+          <h3 class="text-adIndigoDye text-2xl font-display mt-6 mb-2">Volunteering</h3>
+          <p class="mx-auto w-11/12 sm:w-10/12 md:w-9/12 lg:w-11/12 xl:w-9/12 text-justify">
+            Building communities and lowering barriers to entering the tech industry are dear to me.
+            I work with a couple of different Women in Technology groups, organize workshops, run community events, and mentor.
+            Recognizing the hard-work workshop attendees put in to learn to code, and seeing their confidence soar when they succeed at their project inspires me.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <img src="assets/img/speaking-lightning-talk.jpg" alt="presenting to a meetup" class="w-96 border border-2 border-adShadowBlue rounded-md mx-auto" />
+          <h3 class="text-adIndigoDye text-2xl font-display mt-6 mb-2">Speaking</h3>
+          <p class="mx-auto w-11/12 sm:w-10/12 md:w-9/12 lg:w-11/12 xl:w-9/12 text-justify">
+            Connecting with others at Meetups and conferences nurtures communities and sparks enthusiasm.
+            I enjoy sharing knowledge and meeting attendees at events.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <img src="assets/img/content.jpg" alt="laptop with IDE open" class="w-96 border border-2 border-adShadowBlue rounded-md mx-auto" />
+          <h3 class="text-adIndigoDye text-2xl font-display mt-6 mb-2">Creating content</h3>
+          <p class="mx-auto w-11/12 sm:w-10/12 md:w-9/12 lg:w-11/12 xl:w-9/12 text-justify">
+            Sharing knowledge through writing posts and making videos is something I enjoy and I'm so lucky it's part of what I do as a Developer Advocate.
+            Check out some of my articles on the <a routerLink="/content" class="text-adBedazzledBlue underline">Content</a> page!
+            Creating workshop tutorials that make the learning process more comfortable and engaging are particularly meaningful to me.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="volunteer m-1 pt-6 md:pt-8 lg:pt-8 xl:pt-8">
-    <h2 class="font-display text-3xl">You can find me volunteering as</h2>
-    <ul class="w-11/12 lg:w-2/3 xl:w-5/12 mx-auto text-left mt-3">
-      <li><span class="text-xl pr-2 text-adGray900">Angular Google Developer Expert</span><br class="md:hidden"/><a
-        href="https://developers.google.com/community/experts" target="_blank" class="underline">Google Developers
-        Experts program</a></li>
-      <li class="mt-2"><span class="text-xl pr-2 text-adGray900">Core team member</span><br class="md:hidden"/><a
-        href="https://ng-girls.org" target="_blank" class="underline">ngGirls</a></li>
-      <li class="mt-2"><span class="text-xl pr-2 text-adGray900">Curriculum Director</span><br class="md:hidden"/>
-        <a href="https://codingandcocktails.kcwomenintech.org/" target="_blank" class="underline">Coding & Cocktails</a>
-        <span class="italic px-1">by</span>
-        <a href="https://kcwomenintech.org/" target="_blank" class="underline">Kansas City Women in Technology</a></li>
-      <li class="mt-2"><span class="text-xl pr-2 text-adGray900">Co-Organizer</span><br class="md:hidden"/><a
-        href="https://www.meetup.com/angularkc/" target="_blank" class="underline">AngularKC Meetup</a></li>
-    </ul>
+  <section class="volunteer text-center py-10 bg-adIndigoDye">
+    <h2 class="font-display text-4xl text-adSalmon py-10">Making tech accessible to all communities is my passion</h2>
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4 mt-3">
+        <img src="assets/img/mentoring-djangogirls.jpg" alt="DjangoGirls selfie with a sign asking 'Who runs the world?"
+             class="w-96 border border-2 border-adShadowBlue rounded-md mx-auto"
+        />
+        <div class="text-center md:text-left">
+          <h3 class="text-adLightBlue text-xl font-display md:mb-5">You might find me sharing knowledge, organizing workshops, designing engaging ways to learn, and community building as</h3>
+          <ul class="py-5 text-adLightBlue">
+            <li><span class="text-2xl pr-2 text-adTea">Angular Google Developer Expert</span><br class="xl:hidden"/><a
+              href="https://developers.google.com/community/experts" target="_blank" class="underline">Google Developers
+              Experts program</a></li>
+            <li class="mt-2"><span class="text-2xl pr-2 text-adTea">Core team member</span><br class="xl:hidden"/><a
+              href="https://ng-girls.org" target="_blank" class="underline">ngGirls</a></li>
+            <li class="mt-2"><span class="text-2xl pr-2 text-adTea">Curriculum Director</span><br class="xl:hidden"/>
+              <a href="https://codingandcocktails.kcwomenintech.org/" target="_blank" class="underline">Coding & Cocktails</a>
+              <span class="italic px-1">by</span>
+              <a href="https://kcwomenintech.org/" target="_blank" class="underline">Kansas City Women in Technology</a></li>
+            <li class="mt-2"><span class="text-2xl pr-2 text-adTea">Co-Organizer</span><br class="xl:hidden"/><a
+              href="https://www.meetup.com/angularkc/" target="_blank" class="underline">AngularKC Meetup</a></li>
+          </ul>
+        </div>
+      </div>
   </section>
 </main>
 <app-contact></app-contact>
+<app-footer></app-footer>
