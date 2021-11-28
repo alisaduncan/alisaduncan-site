@@ -4,12 +4,13 @@ import { PostCardComponent } from './post-card/post-card.component';
 import { MatCardModule } from '@angular/material/card';
 import { ContactComponent } from './contact/contact.component';
 import { MatIconModule } from '@angular/material/icon';
+import { FooterComponent } from './footer/footer.component';
 
 
 
 @NgModule({
-  declarations: [PostCardComponent, ContactComponent],
-  exports: [PostCardComponent, ContactComponent],
+  declarations: [PostCardComponent, ContactComponent, FooterComponent],
+  exports: [PostCardComponent, ContactComponent, FooterComponent],
   imports: [
     CommonModule,
     MatCardModule,
