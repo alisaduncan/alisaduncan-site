@@ -2,3 +2,11 @@
   font-size: 1.7rem;
   line-height: 2.1rem;
 }
+
+.active-link {
+  @apply text-adTerracotta;
+}
+
+a {
+  @apply hover:bg-adLightBlue hover:rounded transition duration-500 ease-in-out;
+}
