@@ -1,14 +1,18 @@
-<mat-toolbar class="bg-adGainsboro text-adCharcoal font-display">
-  <div class="w-full flex flex-row justify-between">
-    <span class="home-link w-1/2">
-      <a routerLink="/">Alisa Duncan</a>
-    </span>
-    <div class="w-1/4">
-      <ul class="w-full flex flex-row justify-end">
-        <li class="mr-8"><a routerLink="/content">Content</a></li>
-        <li class=""><a routerLink="/resume">Resume</a></li>
-      </ul>
+<div class="bg-adGainsboro text-adCharcoal font-display">
+  <nav class="p-4 mx-4 grid grid-cols-1 sm:grid-cols-2 justify-between items-center">
+    <div class="home-link mx-auto sm:mx-0">
+      <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">
+        <span class="p-2">Alisa Duncan</span>
+      </a>
     </div>
+    <div class="flex flex-row justify-center items-center sm:justify-end text-xl">
+      <a routerLink="/content" routerLinkActive="active-link" class="mr-5 p-1">
+        <span class="px-2">Content</span>
+      </a>
+      <a routerLink="/resume" routerLinkActive="active-link" class="p-1">
+        <span class="px-2">Resume</span>
+      </a>
+    </div>
+  </nav>
+</div>
 
-  </div>
-</mat-toolbar>

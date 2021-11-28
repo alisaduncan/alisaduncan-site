@@ -8,7 +8,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
-import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { AppComponent } from './app.component';
 import { ResumeComponent } from './resume/resume.component';
@@ -38,7 +37,6 @@ import { HighlightsComponent } from './highlights/highlights.component';
     MatButtonModule,
     MatCardModule,
     MatDividerModule,
-    MatToolbarModule,
     SharedModule
   ],
   providers: [],
